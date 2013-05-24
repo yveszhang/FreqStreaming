@@ -1,0 +1,36 @@
+Prototyping a language for programming on (time-)regular streams
+----------------------------------------------------------------
+
+Pointers to material:
+---------------------
+
+o Lustre: papers available...
+  Lustre compiler at http://www-verimag.imag.fr/Lustre-V6.html
+
+o Functional reactive programming (FRP): originally by Conal Elliott
+    http://www.haskell.org/haskellwiki/Functional_Reactive_Programming
+
+    http://www.haskell.org/haskellwiki/Reactive-banana
+    http://www.haskell.org/haskellwiki/FRP_explanation_using_reactive-banana
+    http://www.haskell.org/haskellwiki/Netwire
+
+    http://elm-lang.org/learn/What-is-FRP.elm
+
+o Hume language:
+    http://www-fp.cs.st-andrews.ac.uk/hume/index.shtml
+    http://www.macs.hw.ac.uk/~greg/hume/
+
+o Comonadic programming model of streams:
+    "The essence of dataflow programming"
+    http://cs.ioc.ee/~tarmo/papers/ , APLAS 2005/CEFP 2005
+
+Design bearing points:
+----------------------
+
+Tolerating undefined values (currently modelled using Maybe)
+
+Regular streams of known frequency
+  (can be established by clocked input when undefined values tolerable)
+
+Using GHC type system extensions (type-nat) to check compatibility/convert
+
